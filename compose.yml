@@ -1,0 +1,48 @@
+services:
+  DB:
+    env_file:
+      - .env
+    image: postgres:17.5
+    restart: always
+    # set shared memory limit when using docker compose
+    shm_size: 128mb
+    # or set shared memory limit when deploy via swarm stack
+    #volumes:
+    #  - type: tmpfs
+    #    target: /dev/shm
+    #    tmpfs:
+    #      size: 134217728 # 128*2^20 bytes = 128Mb
+    environment:
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_DB: ${DB_NAME}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+    ports:
+      - "${DB_PORT}:5432"
+    volumes:
+      - VOLUME_DB:/var/lib/postgresql/data
+    networks:
+      - communication
+  API:
+    env_file:
+      - .env
+    image: goapi:latest
+    build:
+      dockerfile: Dockerfile
+      context: GoApi
+    environment:
+      DB_HOST: ${DB_HOST}
+      DB_PORT: ${DB_PORT}
+      DB_USER: ${DB_USER}
+      DB_NAME: ${DB_NAME}
+      DB_PASSWORD: ${DB_PASSWORD}
+    depends_on:
+      - DB
+    ports:
+      - "${API_PORT}:8080"
+    networks:
+      - communication
+volumes:
+  VOLUME_DB:
+    name: VOLUME_DB
+networks:
+  communication: {}

@@ -1,0 +1,19 @@
+{
+  "name": "steamlikeclient",
+  "version-string": "1.0.0",
+  "builtin-baseline": "d217625a8d438d0dd3f8ec966838599314c663b0",
+  "dependencies": [
+    {
+      "name": "boost-beast",
+      "version>=": "1.88.0"
+    },
+    {
+      "name": "boost-json",
+      "version>=": "1.88.0"
+    },
+    {
+      "name": "gtkmm",
+      "version>=": "4.14.0"
+    }
+  ]
+}

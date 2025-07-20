@@ -1,0 +1,111 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "GoApi",
+    "description": "GoApi",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:8080"
+    }
+  ],
+  "paths": {
+    "/games": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Ok",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": [
+                    "array"
+                  ],
+                  "items": {
+                    "type": [
+                      "object"
+                    ],
+                    "properties": {
+                      "Id": {
+                        "type": [
+                          "integer"
+                        ]
+                      },
+                      "Name": {
+                        "type": [
+                          "string"
+                        ]
+                      },
+                      "Description": {
+                        "type": [
+                          "string"
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/games/{id}": {
+      "get": {
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "schema": {
+              "type": [
+                "integer"
+              ]
+            },
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Ok",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": [
+                    "object"
+                  ],
+                  "properties": {
+                    "Id": {
+                      "type": [
+                        "integer"
+                      ]
+                    },
+                    "Name": {
+                      "type": [
+                        "string"
+                      ]
+                    },
+                    "Description": {
+                      "type": [
+                        "string"
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Missing id in path"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Parameters are in the wrong format or DB is not available"
+          }
+        }
+      }
+    }
+  }
+}
