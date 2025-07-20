@@ -3,6 +3,17 @@ Steam Like Multiservice is a portfolio project that aims at reproducing simple f
 using a distributed architecture. The system is currently deployed using a compose file in either
 podman or docker. In the current form, the system is composed of those services:
 
+## How to run the services
+1. First, copy `.env.template` and rename it to `.env`
+2. Execute `docker compose build` or `podman compose build`
+3. Then finally, execute `docker compose up -d` or `podman compose up -d`
+
+## How to run the client
+See [Client/README.MD](./Client/README.MD) to see how to build the project, or use the prebuilt binaries in release.
+
+⚠️ In this version the application will not reattempt to get the data if the services are off.
+Please run the services first (retry will be implemented in the next versions)
+
 ## Services
 ### Client
 This application is not a service per say, but it's actually a desktop application made with CPP
