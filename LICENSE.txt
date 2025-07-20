@@ -1,0 +1,44 @@
+SteamLikeClient Source-Available License v1.0
+Copyright (c) 2025 Jimmy Tremblay-Bernier
+
+Permission is hereby granted to any individual (the “User”) to:
+  (a) download, install, and run an unmodified copy of this software and its
+      accompanying source code (the "Software") on a personal or internal
+      company computer solely for evaluation or portfolio review purposes; and
+  (b) make temporary private modifications solely for the purpose of evaluating
+      or testing possible improvements, provided such modifications are not
+      distributed or publicly deployed.
+
+All other uses are prohibited. Without prior written permission, the User may
+NOT: copy (except as necessary for (a) above), publish, distribute, sublicense,
+sell, rent, lease, lend, host, provide as a managed/service offering, use any
+portion of the Software in or with any other software or product, create or
+distribute derivative works, or remove any copyright or attribution notices.
+
+Open-source / Free Software use is expressly not granted; this license is not
+an OSI-approved open source license.
+
+Contributions (Pull Requests). If you submit any code, documentation, or other
+materials (“Contributions”) to the project repository, you grant the copyright
+holder a perpetual, worldwide, irrevocable, royalty-free license to use,
+modify, sublicense, and distribute your Contributions as part of the Software
+under this license or any future license version chosen for the Software.
+
+NO PATENT LICENSE. No patent rights are granted, expressly or by implication.
+If you initiate any patent claim against the copyright holder alleging that
+the Software infringes a patent, your rights under this license terminate
+immediately.
+
+TERMINATION. Any breach automatically terminates the rights granted herein.
+Upon termination you must cease all use and destroy all copies.
+
+DISCLAIMER OF WARRANTY. THE SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF
+ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+
+LIMITATION OF LIABILITY. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS
+BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF
+CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+All rights not expressly granted are reserved.
